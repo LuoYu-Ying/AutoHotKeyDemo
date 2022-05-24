@@ -1,5 +1,5 @@
 # AutoHotKeyDemo
-通过 AHK 为自己做的一些小工具。
+通过 AutoHotKey_v1 为自己做的一些小工具。
 
 ## 目前已有程序
 
@@ -10,4 +10,4 @@
 
 - [ ] BlogEzWirte <br>
       通过热字串进行部分文章内容样式的快速实现。 <br>
-      可能会将 HexoBlogUpdater 合并至此工具中。
+      未来可能会将 HexoBlogUpdater 合并至此工具中。
