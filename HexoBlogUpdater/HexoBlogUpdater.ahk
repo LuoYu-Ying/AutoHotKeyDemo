@@ -1,7 +1,7 @@
 #SingleInstance, Force
 
 blogSite := "https://luoyu-ying.github.io/" ; 更改为自己的博客网址
-rootFolderPath := "D:\Blog" ; 更改为自己的博客根目录地址
+rootFolderPath := "E:\XXX\HexoBlog" ; 更改为自己的博客根目录地址
 
 SetWorkingDir, %rootFolderPath%
 
@@ -71,7 +71,11 @@ ButtonNewPost:
     InputBox, FileName, NewPostTitle, Please enter the title of new post., , , 130
     if ErrorLevel
         Return
-    RunWait, %comSpec% /c hexo new post "%FileName%"
+    Gui, Msg:+Disabled -SysMenu +Owner
+    Gui, Msg:Add, Text, w200 center, File creating...`nPlease wait...
+    Gui, Msg:Show, NoActivate ; NoActivate 让当前活动窗口继续保持活动状态.
+    RunWait, %comSpec% /c hexo new post "%FileName%", , Hide
+    Gui, Msg:Destroy
     newFileName := StrReplace(FileName, A_Space, "-") ".md"
     Run, %newFileName%, source\_posts, Hide
 Return
