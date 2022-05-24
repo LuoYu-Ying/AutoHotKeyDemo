@@ -1,5 +1,4 @@
-# AutoHotKeyDemo
-通过 AutoHotKey_v1 为自己做的一些小工具。
+通过 `AutoHotKey_v1` 为自己做的一些小工具。
 
 ## 目前已有程序
 
