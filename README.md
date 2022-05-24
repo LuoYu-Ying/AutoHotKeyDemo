@@ -8,5 +8,5 @@
 ## TODO
 
 - [ ] BlogEzWirte <br>
-      通过热字串进行部分文章内容样式的快速实现。 <br>
+      对博客文章的部分内容样式的快速实现。 <br>
       未来可能会将 HexoBlogUpdater 合并至此工具中。
