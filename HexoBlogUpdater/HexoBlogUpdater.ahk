@@ -1,7 +1,7 @@
 #SingleInstance, Force
 
 blogSite := "https://luoyu-ying.github.io/" ; 更改为自己的博客网址
-rootFolderPath := "E:\XXX\HexoBlog" ; 更改为自己的博客根目录地址
+rootFolderPath := "D:\Blog" ; 更改为自己的博客根目录地址
 
 SetWorkingDir, %rootFolderPath%
 
@@ -33,22 +33,22 @@ Return
 
 ; 清理、生成和本地部署
 ButtonCleanGenerateServer:
-    Run, %comSpec% /c hexo clean && hexo g && hexo s && pause, , Min
+    Run, %comSpec% /c hexo clean && hexo g && hexo s && pause
 Return
 
 ; 清理、生成和服务器部署
 ButtonCleanGenerateDeploy:
-    Run, %comSpec% /c hexo clean && hexo g && hexo d, , Min
+    Run, %comSpec% /c hexo clean && hexo g && hexo d && pause
 Return
 
 ; 生成和服务器部署
 ButtonGenerateDeploy:
-    Run, %comSpec% /c hexo g && hexo d, , Min
+    Run, %comSpec% /c hexo g && hexo d && pause
 Return
 
 ; 服务器部署
 ButtonDeploy:
-    Run, %comSpec% /c hexo d, , Min
+    Run, %comSpec% /c hexo d && pause
 Return
 
 ; 打开根目录文件夹
