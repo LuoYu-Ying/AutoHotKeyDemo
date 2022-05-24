@@ -1,3 +1,5 @@
+> [个人博客](https://luoyu-ying.github.io/)
+
 通过 `AutoHotKey` 编写可视化界面以解决每一次部署博客都需要输入命令的情况。
 
 使用的  `AutoHotKey` 版本：1.33
