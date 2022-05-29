@@ -26,7 +26,7 @@ exitapp
 checkWinId() { 
     MouseGetPos, , ,win 
     WinGet, winId, id, ahk_class Shell_TrayWnd
-    if win = %winId% 
+    If win = %winId% 
         Return, 1 
     Else 
         Return, 0 
