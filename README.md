@@ -4,6 +4,8 @@
 
 - [x] HexoBlogUpdater <br>
       通过可视化界面完成新建文章以及服务器数据更新等功能。
+- [x] WheelControlsVolume <br>
+      通过滚轮在任务栏滚动，以实现调节音量的效果。
 
 ## TODO
 
